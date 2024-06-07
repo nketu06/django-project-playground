@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def course_name(request):
-    return HttpResponse("first_course")
+    return HttpResponse('<h1>first_course</h1>')
