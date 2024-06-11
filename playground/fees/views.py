@@ -5,4 +5,5 @@ from django.http import HttpResponse
 
 def fees_detail(request):
     print(request,'------>',type(request))
-    return render(request,"fee_detail.html")
+    context={'name':'ketu','price':"zero"}
+    return render(request,"fees/fee_detail.html",context)
