@@ -22,6 +22,10 @@
         adding filter to check capfirst filter in my name - {{name|capfirst}}
         <br>
         more filters to check fee value -> {{price|default:"Nothing is Free"}} and date is {{today|date:'D d M Y'}}
+        <br>
+        {% if name == 'ketu' %}
+        <h2>Hello {{name}}</h2>
+        {% endif %}
     </h1>
 </body>
 </html>
