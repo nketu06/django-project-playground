@@ -7,4 +7,4 @@ from datetime import datetime
 def fees_detail(request):
     print(request,'------>',type(request))
     context={'name':'ketu','price':"zero","today":datetime.now()}
-    return render(request,"fees/fee_detail.html",context)
+    return render(request,"fee_detail.html",context)
