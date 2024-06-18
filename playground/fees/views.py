@@ -8,3 +8,7 @@ def fees_detail(request):
     print(request,'------>',type(request))
     context={'name':'ketu','price':"zero","today":datetime.now()}
     return render(request,"fee_detail.html",context)
+
+def fees_slip(request):
+    context={'slip':'January'}
+    return render(request,"feeslip.html",context)
