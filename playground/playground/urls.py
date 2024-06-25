@@ -21,5 +21,6 @@ from course.views import course_name
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('course-name/', course_name,name='course_name'),
-    path('fee/',include('fees.urls'))
+    path('fee/',include('fees.urls')),
+    path('result/',include('result.urls'))
 ]
