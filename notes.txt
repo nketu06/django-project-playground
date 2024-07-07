@@ -1,2 +1,5 @@
 django-admin startproject project_name
 python3 manage.py startapp course
+python3 manage.py sqlmigrate result 0001 -> to see sql command
+python3 manage.py showmigrations   
+python3 manage.py makemigrations      
